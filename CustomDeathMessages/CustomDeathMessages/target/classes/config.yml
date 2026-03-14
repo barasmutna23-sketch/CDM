@@ -1,0 +1,544 @@
+# Enable Update Messages: enables update messages
+enable-update-messages: true
+
+# To use hex colors: &#hex
+# PvP Messages: sends a message to the killer and victim when a player is killed by another player.
+# Placeholders for pvp messages: %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+enable-pvp-messages: true
+
+# Message cooldown: cooldown in seconds between death messages for a specific player. 0 to disable.
+message-cooldown: 0
+
+# Enable Global Messages: enables global death messages
+enable-global-messages: true
+
+# Original on Hover: show the original death message when hovering over the custom message.
+enable-original-on-hover: false
+
+# Item on Hover: show the item used to kill the player when hovering over the item name.
+enable-item-on-hover: true
+
+# You can add, edit, or remove any of the messages below.
+# Placeholders for melee messages: %kill-weapon%, %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+global-pvp-death-messages:
+  - '&3%victim%&r&4 has been killed by &3%killer%'
+  - '&3%victim%&r&4 was slain by &3%killer%'
+  - '&3%victim%&r&4 has been put down by &3%killer%'
+  - '&3%killer%&r&4 pulverized &3%victim%'
+  - '&3%victim%&r&4 was destroyed by &3%killer%'
+  - '&3%victim%&r&4 was rekt by &3%killer%'
+  - '&3%victim%&r&4 was EZ clapped by &3%killer%'
+# Messages for entities with custom names: will override their mob group message and display these instead, if enabled.
+# Placeholders: %victim%, %victim-nick%, %entity-name%, %victim-x%, %victim-y%, %victim-z%
+enable-custom-name-entity-messages: true
+custom-name-entity-messages:
+  - '&c%victim% &egot rocked by %entity-name%'
+  - '&c%victim% &ewas put to sleep by %entity-name%'
+  - '&c%entity-name% &eate &c%victim%''s &esoul'
+  - '&c%victim% &ewishes they didn''t fight %entity-name%'
+
+# Placeholders for ALL below messages: %victim%, %victim-nick%, %entity-name%, %victim-x%, %victim-y%, %victim-z%
+fall-messages:
+  - "&3%victim%&r&4 decided to test gravity and lost"
+  - "&3%victim%&r&4 forgot to bring their parachute"
+  - "&3%victim%&r&4 thought they could fly... they couldn't"
+
+combat-message:
+  - "&3%victim%&r&4 tried to escape combat and died"
+drowning-messages:
+  - "&3%victim%&r&4 decided to sleep with the fishes"
+  - "&3%victim%&r&4 thought they could make it to oxygen in time"
+  - "&3%victim%&r&4 tried to outswim the water"
+
+suffocation-messages:
+  - "&3%victim%&r&4 couldn't catch their breath while in a block"
+  - "&3%victim%&r&4 couldn't breathe while inside of a block"
+  - "&3%victim%&r&4 was outsmarted by a block"
+
+cramming-messages:
+  - "&3%victim%&r&4 was squeezed into oblivion"
+  - "&4Poor &3%victim%&r&4, they thought they could live in a 1x1 space"
+
+thorns-messages:
+  - "&3%victim%&r&4 was repelled by &3%killer%&r&4's thorny armor"
+  - "&3%victim%&r&4 got the tables turned on them by &3%killer%&r&4's thorns"
+
+lava-messages:
+  - "&3%victim%&r&4 burned up in a pit of lava"
+  - "&3%victim%&r&4 went for a swim in lava and got burned"
+
+magma-block-messages:
+  - "&3%victim%&r&4 was removed by a hot &6magma block"
+  - "&3%victim%&r&4's feet were made into bacon by a &6magma block"
+
+elytra-messages:
+  - "&3%victim%&r&4 flew into a wall and died...?"
+  - "&3%victim%&r&4 got slammed into a wall by his elytra"
+
+wither-messages:
+  - "&3%victim%&r&4 got the &9wither &4disease"
+  - "&3%victim%&r&4 &9withered &4away to the 4th dimension"
+
+suicide-messages:
+  - "&3%victim%&r&4 killed themself"
+  - "&3%victim%&r&4 had a mental breakdown and died"
+
+fire-messages:
+  - "&3%victim%&r&4 stood in the fireplace"
+  - "&3%victim%&r&4 played with fire"
+
+fire-tick-messages:
+  - "&3%victim%&r&4 forgot to stop, drop, and roll"
+
+starvation-messages:
+  - "&3%victim%&r&4 forgot to eat"
+  - "&3%victim%&r&4's mom said we have food at home"
+
+cactus-messages:
+  - "&3%victim%&r&4 was pricked to death"
+  - "&3%victim%&r&4 tried acupuncture, but died"
+  - "&3%victim%&r&4 hugged a cactus to death"
+
+potion-messages:
+  - "&3%victim%&r&4 fell victim to a bad potion"
+  - "&3%victim%&r&4 died of coronavirus"
+
+void-messages:
+  - "&3%victim%&r&4 thought it would be fun to take a trip in the void"
+  - "&3%victim%&r&4 took a one-way trip to the void"
+  - "&3%victim%&r&4 went on a cosmic adventure... without a spaceship"
+
+lightning-messages:
+  - "&3%victim%&r&4 was zapped by divine intervention"
+  - "&3%victim%&r&4 was struck down by the gods"
+  - "&3%victim%&r&4 got a shocking reminder from above"
+
+falling-block-messages:
+  - "&3%victim%&r&4 was crushed by a falling block"
+  - "&3%victim%&r&4 became one with the falling block"
+  - "&3%victim%&r&4 met their match in a falling block"
+
+freeze-messages:
+  - "&3%victim%&r&4 didn't survive the polar vortex"
+  - "&3%victim%&r&4 forgot his winter jacket"
+  - "&3%victim%&r&4 froze faster than an ice cube"
+
+firework-messages:
+  - "&3%victim%&r&4 lit the fuse on a firework too soon"
+  - "&3%victim%&r&4 tried to fly with style... and crashed"
+  - "&3%victim%&r&4 discovered the perils of amateur pyrotechnics"
+
+slime-messages:
+  - "&3%victim%&r&4 was crushed by a &2GIANT SLIME"
+  - "&3%victim%&r&4 was &2slimed &4to death while collecting slime balls"
+
+zombie-messages:
+  - "&3%victim%&r&4 was eaten alive by a &2Zombie"
+  - "&3%victim%&r&4 thought a &2Zombie &4was friendly"
+
+pigman-messages:
+  - "&3%victim%&r&4 aggroed the &ePigmen &4and got eaten alive"
+  - "&3%victim%&r&4 angered the &ePigmen &4and became their bacon"
+
+skeleton-messages:
+  - "&3%victim%&r&4 got sniped by a bony &fSkeleton"
+  - "&3%victim%&r&4 got shot by a &fskeleton"
+
+magmacube-messages:
+  - "&3%victim%&r&4 got crushed by a &6GIANT MAGMA CUBE"
+
+husk-messages:
+  - "&3%victim%&r&4 got eaten by a dessert dweller AKA a &3Husk"
+
+spider-messages:
+  - "&3%victim%&r&4 was outsmarted by a crafty &1spider"
+  - "&3%victim%&r&4 was &1spider-snacked"
+
+cavespider-messages:
+  - "&3%victim%&r&4 got bitten to death by a &1Cave Spider"
+  - "&3%victim%&r&4 got a venomous hug from a &1Cave Spider"
+
+witherskeleton-messages:
+  - "&3%victim%&r&4 got destroyed by a &0Wither Skeleton &4with a stone sword"
+  - "&3%victim%&r&4 got schooled by a &0Wither Skeleton &4with a stone sword"
+
+witherboss-messages:
+  - "&3%victim%&r&4 got his head blown off by the &0Wither"
+  - "&3%victim%&r&4 challenged the &0Wither &4and lost their head"
+  - "&3%victim%&r&4 got a deadly lesson from the &0Wither"
+
+dragon-messages:
+  - "&3%victim%&r&4 got his guts ripped out by the &5Ender Dragon"
+  - "&3%victim%&r&4 got his head blown off by the &5Ender Dragon"
+  - "&3%victim%&r&4 found a respawn screen, not the end portal"
+
+dragon-breath-messages:
+  - "&3%victim%&r&4 took a bath in the &5Ender Dragon's breath"
+  - "&3%victim%&r&4 inhaled a bit too much of the &5Ender Dragon's breath"
+  - "&3%victim%&r&4 was incinerated by the &5Ender Dragon's breath &4attack"
+
+elderguardian-messages:
+  - "&3%victim%&r&4 tried to clear a ocean monument but the &bElder Guardian &4said no"
+  - "&3%victim%&r&4 thought they could conquer an ocean monument, but the &bElder Guardian &4had other plans"
+
+tnt-messages:
+  - "&3%victim%&r&4 got his head blown off by &4TNT"
+  - "&3%victim%&r&4 got blown up by &4TNT"
+  - "&3%victim%&r&4 found out about explosives the hard way"
+
+end-crystal-messages:
+  - "&3%victim%&r&4 got pieced by an &5End Crystal"
+  - "&3%victim%&r&4 got blown up by an &5End Crystal"
+
+creeper-messages:
+  - "&3%victim%&r&4 was rudely introduced to a &aCreeper's &4explosive personality"
+  - "&3%victim%&r&4 encountered a &aCreeper &4and got blown sky-high"
+  - "&3%victim%&r&4 underestimated the blast radius of a &aCreeper"
+  - "&3%victim%&r&4 tried to defuse a &aCreeper&4... it didn't work"
+
+ghast-messages:
+  - "&3%victim%&r&4 got fireballed by a &bGhast"
+
+enderman-messages:
+  - "&3%victim%&r&4 looked an &5Enderman &4in the eyes"
+  - "&3%victim%&r&4 tried to play peek-a-boo with an &5Enderman"
+
+silverfish-messages:
+  - "&3%victim%&r&4 got eaten by a &7Silverfish"
+
+witch-messages:
+  - "&3%victim%&r&4 was bewitched by a sneaky &9Witch"
+  - "&3%victim%&r&4 was turned into a frog by a vengeful &9Witch"
+
+shulker-messages:
+  - "&3%victim%&r&4 died trying to get some &dshulker &4hells"
+  - "&3%victim%&r&4 got shot by a &dShulker"
+  - "&3%victim%&r&4 got ruined by a &dShulker"
+
+guardian-messages:
+  - "&3%victim%&r&4 got killed by a &7Guardian"
+  - "&3%victim%&r&4 got zapped by an electrifying &7Guardian"
+  - "&3%victim%&r&4 was outswam by a sneaky &7Guardian"
+
+golem-messages:
+  - "&3%victim%&r&4 made an &7Iron Golem &4mad"
+  - "&3%victim%&r&4 provoked an &7Iron Golem's &4wrath"
+  - "&3%victim%&r&4 got a lesson in &7Iron Golem &4diplomacy"
+
+zombievillager-messages:
+  - "&3%victim%&r&4 was made dinner of by a &2Zombie Villager"
+
+endermite-messages:
+  - "&3%victim%&r&4 encountered an &5Endermite &4and got nibbled to death"
+  - "&3%victim%&r&4 was outwitted by an &5Endermite"
+
+phantom-messages:
+  - "&3%victim%&r&4 was kidnapped by a &1Phantom"
+
+drowned-messages:
+  - "&3%victim%&r&4 went for a late night swim and got eaten by a &2Drowned Zombie"
+  - "&3%victim%&r&4 discovered that &2Drowned &4aren't just regular swimmers"
+
+pillager-messages:
+  - "&3%victim%&r&4 got shot by a &3Pillager"
+
+ravager-messages:
+  - "&3%victim%&r&4 got rammed by a &3Ravager"
+
+illusioner-messages:
+  - "&3%victim%&r&4 was sent to the illusion world by an &6Illusioner"
+  - "&3%victim%&r&4 was tricked by an &6Illusioner"
+  - "&3%victim%&r&4 was killed by an &6Illusioner"
+
+bee-messages:
+  - "&3%victim%&r&4 was stung by a &6BEE"
+  - "&3%victim%&r&4 met a &6bee &4and found out they're not just honey makers"
+  - "&3%victim%&r&4 got stung by a persistent &6bee"
+
+wolf-messages:
+  - "&3%victim%&r&4 was ripped apart by a &7Wolf"
+  - "&3%victim%&r&4 provoked a &7Wolf"
+
+llama-messages:
+  - "&3%victim%&r&4 was spit to death by a &eLlama"
+  - "&3%victim%&r&4 got caught in a &ellama's &4spitfire"
+  - "&3%victim%&r&4 got a mouthful of &llama &4spit"
+
+blaze-messages:
+  - "&3%victim%&r&4 was charred by a &6Blaze"
+  - "&3%victim%&r&4 got roasted by a fiery &6Blaze"
+  - "&3%victim%&r&4 learned the hard way not to play with fire &6Blazes"
+
+stray-messages:
+  - "&3%victim%&r&4 was domed by a &7Stray"
+
+vex-messages:
+  - "&3%victim%&r&4 was eaten by a tiny flying &bVex"
+  - "&3%victim%&r&4 got vexed by a &bVex"
+
+vindicator-messages:
+  - "&3%victim%&r&4 was hunted down by a &4Vindicator"
+  - "&3%victim%&r&4 underestimated the strength of a &4Vindicator"
+  - "&3%victim%&r&4 got caught in a &4Vindicator's &4path of destruction"
+
+evoker-messages:
+  - "&3%victim%&r&4 was summoned to the dead by an &4Evoker"
+  - "&3%victim%&r&4 tried the wrath of an &4Evoker"
+  - "&3%victim%&r&4 was evoked by an &4Evoker"
+
+pufferfish-messages:
+  - "&3%victim%&r&4 underestimated the toxicity of a &ePufferfish"
+  - "&3%victim%&r&4 met a &ePufferfish &4and learned the hard way not to touch"
+
+polar-bear-messages:
+  - "&3%victim%&r&4 was mauled by an icy-cold &fPolar Bear"
+  - "&3%victim%&r&4 got turned to snow by a &fPolar Bear"
+
+dolphin-messages:
+  - "&3%victim%&r&4 provoked a &bDolphin&4... and lost?"
+  - "&3%victim%&r&4 hit a &bDolphin &4and they retaliated"
+
+panda-messages:
+  - "&3%victim%&r&4 was made into a &8Pandas &4dinner"
+  - "&3%victim%&r&4 tried stealing a &8Pandas &4bamboo"
+
+piglin-messages:
+  - "&3%victim%&r&4 met his maker against the new &6Piglins"
+  - "&3%victim%&r&4 tangled with &6Piglins &4and got a lesson in survival"
+  - "&3%victim%&r&4 met &6Piglins &4and discovered they don't negotiate"
+
+hoglin-messages:
+  - "&3%victim%&r&4 was charged by a &6Hoglin&4, kind of rude?"
+  - "&3%victim%&r&4 didn't read the patch notes about &6Hoglins"
+
+zoglin-messages:
+  - "&3%victim%&r&4 ate a &6Zoglins &4horn for dinner"
+  - "&3%victim%&r&4 was rammed by a &6Zoglin"
+
+goat-messages:
+  - "&3%victim%&r&4 was headbutted by a &4Goat"
+  - "&3%victim%&r&4 was impaled by a &4Goat &4horn"
+
+zombified-piglin-messages:
+  - "&3%victim%&r&4 took a &6Piglin &4to the overworld and was murdered by their new, not so friendly pet"
+  - "&3%victim%&r&4 died to a &6Piglin&4... I mean, Pigman... I mean, Zombified Piglin"
+
+fox-messages:
+  - "&3%victim%&r&4 &6foxed &4around and found out"
+  - "&3%victim%&r&4 was chewed up by a &6Fox"
+
+warden-messages:
+  - "&3%victim%&r&4 was killed by a &1Warden&4... I mean, what did you expect?"
+  - "&3%victim%&r&4 underestimated the &1Warden's &4strength"
+  - "&3%victim%&r&4 got too close to a &1Warden's &4territory"
+
+warden-sonic-boom-messages:
+  - "&3%victim%&r&4 was sonic boomed by a &1Warden"
+  - "&3%victim%&r&4 got his ears blown out by a &1Warden's sonic boom"
+
+unknown-messages:
+  - "&3%victim%&r&4 killed themself"
+  - "&3%victim%&r&4 had a mental breakdown and died"
+
+fireball-messages:
+  - "&3%victim%&r&4 was roasted by an unexpected &4fireball &4attack"
+  - "&3%victim%&r&4 got caught in a fiery storm of &4fireballs"
+  - "&3%victim%&r&4 was incinerated by a barrage of &4fireballs"
+
+arrow-messages:
+  - "&3%victim%&r&4 was caught in a rain of &5arrows"
+  - "&3%victim%&r&4 tried to outrun &5arrows&4... it didn't work"
+
+# Only here to help me debug my plugin, not suggested you enable.
+developer-mode: false
+
+# Config version, do not change this.
+config-version: 2
+
+settings:
+    notifyAboutUpdates: true
+
+    # How long player stays in combat after last hit
+    combatTimerDuration: 20s
+
+    # Worlds where combat is disabled
+    ignoredWorlds:
+      - world_spawn
+
+
+  # ===============================
+  # Ender Pearl Settings
+  # ===============================
+pearl:
+
+    pearlThrowDamageEnabled: true
+
+    pearlThrowDisabledDuringCombat: false
+
+    pearlCooldownEnabled: true
+
+    pearlThrowDelay: 10s
+
+    pearlThrowBlockedDuringCombat: "<red>You cannot throw ender pearls during combat!"
+
+    pearlThrowBlockedDelayDuringCombat: "<red>You must wait {TIME} before throwing another pearl!"
+
+
+  # ===============================
+  # Item Drop Settings
+  # ===============================
+drop:
+
+    dropEventPriority: NORMAL
+
+    # UNCHANGED
+    # PERCENT
+    # PLAYERS_HEALTH
+    dropType: UNCHANGED
+
+    dropItemPercent: 100
+
+    playersHealthPercentClamp: 20
+
+    affectExperience: false
+
+
+    # Player head drops
+    headDropEnabled: false
+
+    headDropChance: 0.0
+
+    headDropOnlyInCombat: true
+
+    headDropDisplayName: "{PLAYER}'s Head"
+
+    headDropLore:
+      - "Slain by {KILLER}"
+      - "Collected in battle"
+
+
+  # ===============================
+  # Knockback Settings
+  # ===============================
+knockback:
+
+    multiplier: 1.0
+
+    forceDelay: 0
+
+
+  # ===============================
+  # Crystal PvP Settings
+  # ===============================
+crystalPvp:
+
+    tagFromCrystals: true
+
+    tagFromRespawnAnchor: true
+
+
+  # ===============================
+  # Command Restrictions
+  # ===============================
+commands:
+
+    # BLACKLIST or WHITELIST
+    commandRestrictionMode: BLACKLIST
+
+    restrictedCommands:
+      - gamemode
+      - tp
+      - tpa
+      - tpaccept
+      - 1v1
+
+
+  # ===============================
+  # Combat Settings
+  # ===============================
+combat:
+
+    releaseAttackerOnVictimDeath: true
+
+    disableElytraUsage: false
+
+    disableElytraOnDamage: false
+
+    disableFlying: false
+
+    disableFireworks: false
+
+
+    enableDamageCauseLogging: false
+
+    damageCauseRestrictionMode: WHITELIST
+
+    loggedDamageCauses:
+      - LAVA
+      - CONTACT
+      - FIRE
+      - FIRE_TICK
+
+
+    ignoredProjectileTypes:
+      - ENDER_PEARL
+      - EGG
+      - WIND_CHARGE
+
+
+    quitPunishmentEventPriority: NORMAL
+
+    whitelistedKickReasons:
+      - Kicked for inactivity
+      - Timed out
+      - Server is restarting
+
+
+  # ===============================
+  # Inventory Restrictions
+  # ===============================
+inventory:
+
+    # ALLOW_ALL
+    # BLOCK_ALL
+    # BLACKLIST
+    # WHITELIST
+    inventoryAccessMode: ALLOW_ALL
+
+    restrictedInventoryTypes:
+      - CHEST
+      - ENDER_CHEST
+      - BARREL
+      - SHULKER_BOX
+
+
+  # ===============================
+  # Placeholder Settings
+  # ===============================
+placeholders:
+
+    isInCombatFormattedTrue: "In Combat"
+
+    isInCombatFormattedFalse: "Not In Combat"
+
+
+  # ===============================
+  # Messages
+  # ===============================
+messages:
+
+    combatActionbar: "&cIn Combat | {SECONDS} Seconds Remaining"
+
+    playerLoggedOutDuringCombat: "&3{PLAYER} &4tried to escape combat and died"
+
+    commandDisabledDuringCombat: "&cYou cannot use this command during combat!"
+
+    inventoryBlockedDuringCombat: "&cYou cannot open this inventory during combat!"
+
+    playerTagged: "&cYou are now in combat! Do not logout."
+
+    playerUntagged: "&aYou are no longer in combat."
+
+    noPermission: "&cYou don't have permission!"
+
+    playerNotFound: "&cPlayer not found!"

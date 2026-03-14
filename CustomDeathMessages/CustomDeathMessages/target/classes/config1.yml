@@ -1,0 +1,191 @@
+  #
+  #  Combat System
+  #
+
+  settings:
+    notifyAboutUpdates: true
+
+    # How long player stays in combat after last hit
+    combatTimerDuration: 20s
+
+    # Worlds where combat is disabled
+    ignoredWorlds:
+      - world_spawn
+
+
+  # ===============================
+  # Ender Pearl Settings
+  # ===============================
+  pearl:
+
+    pearlThrowDamageEnabled: true
+
+    pearlThrowDisabledDuringCombat: false
+
+    pearlCooldownEnabled: true
+
+    pearlThrowDelay: 10s
+
+    pearlThrowBlockedDuringCombat: "<red>You cannot throw ender pearls during combat!"
+
+    pearlThrowBlockedDelayDuringCombat: "<red>You must wait {TIME} before throwing another pearl!"
+
+
+  # ===============================
+  # Item Drop Settings
+  # ===============================
+  drop:
+
+    dropEventPriority: NORMAL
+
+    # UNCHANGED
+    # PERCENT
+    # PLAYERS_HEALTH
+    dropType: UNCHANGED
+
+    dropItemPercent: 100
+
+    playersHealthPercentClamp: 20
+
+    affectExperience: false
+
+
+    # Player head drops
+    headDropEnabled: false
+
+    headDropChance: 0.0
+
+    headDropOnlyInCombat: true
+
+    headDropDisplayName: "{PLAYER}'s Head"
+
+    headDropLore:
+      - "Slain by {KILLER}"
+      - "Collected in battle"
+
+
+  # ===============================
+  # Knockback Settings
+  # ===============================
+  knockback:
+
+    multiplier: 1.0
+
+    forceDelay: 0
+
+
+  # ===============================
+  # Crystal PvP Settings
+  # ===============================
+  crystalPvp:
+
+    tagFromCrystals: true
+
+    tagFromRespawnAnchor: true
+
+
+  # ===============================
+  # Command Restrictions
+  # ===============================
+  commands:
+
+    # BLACKLIST or WHITELIST
+    commandRestrictionMode: BLACKLIST
+
+    restrictedCommands:
+      - gamemode
+      - tp
+      - tpa
+      - tpaccept
+      - 1v1
+
+
+  # ===============================
+  # Combat Settings
+  # ===============================
+  combat:
+
+    releaseAttackerOnVictimDeath: true
+
+    disableElytraUsage: false
+
+    disableElytraOnDamage: false
+
+    disableFlying: false
+
+    disableFireworks: false
+
+
+    enableDamageCauseLogging: false
+
+    damageCauseRestrictionMode: WHITELIST
+
+    loggedDamageCauses:
+      - LAVA
+      - CONTACT
+      - FIRE
+      - FIRE_TICK
+
+
+    ignoredProjectileTypes:
+      - ENDER_PEARL
+      - EGG
+      - WIND_CHARGE
+
+
+    quitPunishmentEventPriority: NORMAL
+
+    whitelistedKickReasons:
+      - Kicked for inactivity
+      - Timed out
+      - Server is restarting
+
+
+  # ===============================
+  # Inventory Restrictions
+  # ===============================
+  inventory:
+
+    # ALLOW_ALL
+    # BLOCK_ALL
+    # BLACKLIST
+    # WHITELIST
+    inventoryAccessMode: ALLOW_ALL
+
+    restrictedInventoryTypes:
+      - CHEST
+      - ENDER_CHEST
+      - BARREL
+      - SHULKER_BOX
+
+
+  # ===============================
+  # Placeholder Settings
+  # ===============================
+  placeholders:
+
+    isInCombatFormattedTrue: "In Combat"
+
+    isInCombatFormattedFalse: "Not In Combat"
+
+
+  # ===============================
+  # Messages
+  # ===============================
+  messages:
+
+    combatActionbar: "&cIn Combat | {SECONDS} Seconds Remaining"
+
+    playerLoggedOutDuringCombat: "&3{PLAYER} &4tried to escape combat and died"
+
+    commandDisabledDuringCombat: "&cYou cannot use this command during combat!"
+
+    inventoryBlockedDuringCombat: "&cYou cannot open this inventory during combat!"
+
+    playerTagged: "&cYou are now in combat! Do not logout."
+
+    playerUntagged: "&aYou are no longer in combat."
+
+    noPermission: "&cYou don't have permission!"
+
+    playerNotFound: "&cPlayer not found!"

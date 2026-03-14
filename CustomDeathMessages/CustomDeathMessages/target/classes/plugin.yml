@@ -1,0 +1,10 @@
+name: CustomDeathMessages
+version: 1.0
+main: me.imxtheus.CustomDeathMessagesAndCombat.deathmessages.CustomDeathMessages
+api-version: 1.21
+author: iMxtheus
+description: A custom death messages plugin with PvP and entity support.
+
+commands: {}
+
+permissions: {}

@@ -1,0 +1,8 @@
+me\imxtheus\CustomDeathMessagesAndCombat\combat\CombatManager.class
+me\imxtheus\CustomDeathMessagesAndCombat\combat\CommandBlocker.class
+me\imxtheus\CustomDeathMessagesAndCombat\combat\CombatQuitListener.class
+me\imxtheus\CustomDeathMessagesAndCombat\combat\CombatListener.class
+me\imxtheus\CustomDeathMessagesAndCombat\deathmessages\DeathListener.class
+me\imxtheus\CustomDeathMessagesAndCombat\deathmessages\MessageManager.class
+me\imxtheus\CustomDeathMessagesAndCombat\deathmessages\CustomDeathMessages.class
+me\imxtheus\CustomDeathMessagesAndCombat\combat\TimeUtil.class
